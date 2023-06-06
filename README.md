@@ -32,95 +32,134 @@ Publish the website in the given URL.
 Figma
 
 ## code:
-<!-- Home Page -->
-<RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/home_page"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:clipToOutline="true"
-android:background="@drawable/home_page"
- />
+```
+/* Home Page */
+position: relative;
+width: 360px;
+height: 640px;
+background: #FB0707;
 
-<!-- drawable/home_page.xml -->
-<vector
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:aapt="http://schemas.android.com/aapt"
-android:width="360dp"
-android:height="640dp"
-android:viewportWidth="360"
-android:viewportHeight="640"
- >
-<group>
-<clip-path
-android:pathData="M0 0H360V640H0V0Z"
-/>
-<path
-android:pathData="M0 0V640H360V0"
-android:fillColor="#FB0707"
-/>
-</group>
-</vector>
+/* login page */
+position: relative;
+width: 360px;
+height: 640px;
+background: #F5E12D;
 
-<!-- login page -->
-<RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/login_page"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:clipToOutline="true"
-android:background="@drawable/login_page"
- />
+/* Saveetha Engineering College */
+position: absolute;
+width: 324px;
+height: 36px;
+left: calc(50% - 324px/2);
+top: 28px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
 
-<!-- drawable/login_page.xml -->
-<vector
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:aapt="http://schemas.android.com/aapt"
-android:width="360dp"
-android:height="640dp"
-android:viewportWidth="360"
-android:viewportHeight="640"
- >
-<group>
-<clip-path
-android:pathData="M0 0H360V640H0V0Z"
-/>
-<path
-android:pathData="M0 0V640H360V0"
-android:fillColor="#F5E12D"
-/>
-</group>
-</vector>
+/* image 1 */
+position: absolute;
+width: 92.94px;
+height: 100px;
+left: calc(50% - 92.94px/2 + 6.47px);
+top: 90px;
+background: url(image.png);
+filter: drop-shadow(10px 4px 8px rgba(0, 0, 0, 0.25));
 
-<!-- SEC Page -->
-<RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/sec_page"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:clipToOutline="true"
-android:background="@drawable/sec_page"
- />
+/* Line 1 */
+position: absolute;
+width: 360px;
+height: 0px;
+left: 0px;
+top: 65px;
+border: 1px solid #000000;
+transform: rotate(-0.16deg);
 
-<!-- drawable/sec_page.xml -->
-<vector
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:aapt="http://schemas.android.com/aapt"
-android:width="360dp"
-android:height="640dp"
-android:viewportWidth="360"
-android:viewportHeight="640"
- >
-<group>
-<clip-path
-android:pathData="M0 0H360V640H0V0Z"
-/>
-<path
-android:pathData="M0 0V640H360V0"
-android:fillColor="#F12DF5"
-/>
-</group>
-</vector>
+/* DEPARTMENTS */
+position: absolute;
+width: 178px;
+height: 32px;
+left: 98px;
+top: 247px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0E0D0D;
+
+/* AI-ML */
+position: absolute;
+width: 178px;
+height: 32px;
+left: 98px;
+top: 320px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0E0D0D;
+
+/* AI-DS */
+position: absolute;
+width: 178px;
+height: 32px;
+left: 98px;
+top: 380px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0E0D0D;
+
+/* IOT */
+position: absolute;
+width: 178px;
+height: 32px;
+left: 98px;
+top: 437px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0E0D0D;
+
+/* CC */
+position: absolute;
+width: 178px;
+height: 32px;
+left: 98px;
+top: 495px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #0E0D0D;
+```
+
 ## OUTPUT:
 ![output](./OUT-1.png)
 ![output](./OUT-2.png)
